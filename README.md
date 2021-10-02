@@ -10,7 +10,7 @@ Some approaches such as segmenting tracks and occluding segments that are out of
 We've summarized the algorithms in this repository, their performance and their drawbacks below:
 
 | Algorith        | Temporal? | Batch                            | Online         |
------------------------------------------------------------------------------------
+|-----------------|-----------|----------------------------------|----------------|
 | Douglas-Peucker | No        | Yes (`O(n log n)`)               | No             |
 | STTrace         | Yes       | Yes (`O(1/n log N/M log M)`)     | Yes (`O(n^2)`) |
 | Bellman's       | No        | Yes (`O(n^2)`)                   | Yes (`O(n^2)`) |

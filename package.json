@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "eslint lib/**/*.{js,ts} --fix",
     "test": "cross-env jest --coverage",
-    "build": "tsc -p tsconfig.build.json"
+    "build:release": "tsc -p tsconfig.build.json"
   },
   "repository": {
     "type": "git",

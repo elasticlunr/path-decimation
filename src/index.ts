@@ -1,3 +1,10 @@
 import { DecimateBatch, DecimateOnline } from "./prelude/interfaces/decimate";
-
-export { DecimateBatch, DecimateOnline }
+import { Decimate_STTrace } from "./sttrace/decimate-sttrace";
+const Decimate = {
+    STTrace: Decimate_STTrace
+}
+export { 
+    DecimateBatch, 
+    DecimateOnline, 
+    Decimate
+}
