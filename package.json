@@ -1,0 +1,82 @@
+{
+  "name": "@solveq/path-decimation",
+  "version": "1.0.0",
+  "description": "Provides a few of the path decimation algorithms we use when handling large GPS datasets",
+  "main": "dist/index.js",
+  "scripts": {
+    "lint": "eslint lib/**/*.{js,ts} --fix",
+    "test": "cross-env jest --coverage",
+    "build": "tsc -p tsconfig.build.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SolveQ/path-decimation.git"
+  },
+  "keywords": [
+    "gps",
+    "path decimation",
+    "algorithm",
+    "data compression",
+    "polyline approximation"
+  ],
+  "authors": [
+    "Seb Renauld <sebastien.renauld@solveq.io>"
+  ],
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/node": "^7.5.5",
+    "@babel/plugin-transform-destructuring": "^7.6.0",
+    "@babel/plugin-transform-function-name": "^7.4.4",
+    "@babel/plugin-transform-modules-commonjs": "^7.6.0",
+    "@babel/plugin-transform-object-super": "^7.5.5",
+    "@babel/plugin-transform-parameters": "^7.4.4",
+    "@babel/plugin-transform-runtime": "^7.5.5",
+    "@babel/polyfill": "^7.6.0",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-stage-1": "^7.0.0",
+    "@babel/preset-typescript": "^7.10.4",
+    "@babel/runtime": "^7.5.5",
+    "@semantic-release/git": "^9.0.0",
+    "@semantic-release/gitlab": "^6.0.9",
+    "@semantic-release/npm": "^7.1.3",
+    "@types/chai": "^4.2.12",
+    "@types/jest": "^25.2.3",
+    "@typescript-eslint/eslint-plugin": "^4.26.1",
+    "@typescript-eslint/parser": "^4.26.1",
+    "babel-jest": "^24.9.0",
+    "babel-plugin-add-module-exports": "^1.0.2",
+    "chai": "^4.2.0",
+    "coveralls": "^3.0.6",
+    "cross-env": "^6.0.3",
+    "eslint": "^7.10.0",
+    "eslint-config-airbnb-typescript": "^10.0.2",
+    "eslint-plugin-import": "^2.23.4",
+    "jest": "^24.9.0",
+    "linematch": "^1.1.1",
+    "nyc": "^14.1.1",
+    "rollup": "^1.27.3",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "semantic-release": "^17.4.2",
+    "sinon": "^7.4.1",
+    "typescript": "^4.0.3"
+  },
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/SolveQ/path-decimation/issues"
+  },
+  "homepage": "https://github.com/SolveQ/path-decimation#readme",
+  "jest": {
+    "collectCoverageFrom": [
+        "src/**/*.ts"
+    ],
+    "testEnvironment": "node",
+    "verbose": true,
+    "silent": false,
+    "coverageReporters": [
+        "text",
+        "cobertura"
+    ]
+  }
+}
