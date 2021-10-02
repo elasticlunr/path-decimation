@@ -14,7 +14,7 @@ export class Decimate_STTrace implements DecimateBatch, DecimateOnline {
     toPoints() {
         return this.points.slice(0);
     }
-    
+
     concat(newPoints: Array<IPoint>):Decimate_STTrace {
         if (!newPoints.length) return this;
         const newTotalSize = this.totalAdded + newPoints.length;
@@ -39,10 +39,19 @@ export class Decimate_STTrace implements DecimateBatch, DecimateOnline {
         this.totalAdded = newTotalSize;
         return this;
     }
+
+    /**
+     * If you would like to change the decimation criteria or function, do it here.
+     * 
+     * @param pointCountToRemove number Number of points to knock out of the buffer
+     * @returns number Number of points removed
+     */
+
     decimateN(pointCountToRemove: number) {
         for (let i = pointCountToRemove; i > 0; i--) {
             this.decimateOne();
         }
+        return pointCountToRemove;
     }
     decimateOne() {
         let toRemoveIdx = null;
