@@ -21,4 +21,9 @@ Two interfaces, `DecimateOnline` and `DecimateBatch`, are provided; these allow 
 
 ## Implementation
 
+### STTrace
+
+STTrace was originally described in [M. Potamias, K. Patroumpas, and T. Sellis. Sampling Trajectory Streams with Spatiotemporal Criteria. In 18th Intl. Conf. on Scientific and Statistical Database Management (SSDBM’06), pages 275–284, 2006.](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.85.9949&rep=rep1&type=pdf), and uses an Euclidean norm as sampling input. Whenever a point is inserted, the Euclidean norm of each point with respect to its neighbors is calculated. This norm is then used to decimate the buffer, with the smallest norms (= the closest point to their respective neighbors) are removed.
+
+For our implementation, we use a static compression value as input; for our use cases, this allowed us to quickly and efficiently derive a path with a targeted length, while removing every extraneous and near-duplicate point, both stemming from GPS jitter, and from people just taking breaks.
 
