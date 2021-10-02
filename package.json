@@ -12,6 +12,10 @@
     "type": "git",
     "url": "git+https://github.com/SolveQ/path-decimation.git"
   },
+  "files": [
+    "dist/**/*",
+    "README.md"
+  ],
   "keywords": [
     "gps",
     "path decimation",
@@ -67,6 +71,9 @@
     "url": "https://github.com/SolveQ/path-decimation/issues"
   },
   "homepage": "https://github.com/SolveQ/path-decimation#readme",
+  "publishConfig": {
+    "access": "public"
+  },
   "jest": {
     "collectCoverageFrom": [
         "src/**/*.ts"
