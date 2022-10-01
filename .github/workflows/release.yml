@@ -18,6 +18,8 @@ jobs:
           node-version: '14.17'
       - name: Install dependencies
         run: npm ci
+      - name: Test
+        run: npm run test
       - name: Build
         run: npm run build:release
       - name: Release

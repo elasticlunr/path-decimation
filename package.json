@@ -1,5 +1,5 @@
 {
-  "name": "@solveq/path-decimation",
+  "name": "@srenauld/path-decimation",
   "version": "1.0.0",
   "description": "Provides a few of the path decimation algorithms we use when handling large GPS datasets",
   "main": "dist/index.js",

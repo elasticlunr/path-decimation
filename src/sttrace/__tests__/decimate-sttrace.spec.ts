@@ -1,4 +1,4 @@
-import { Decimate } from 'index';
+import { Decimate } from '../../';
 import { DecimateOnline } from 'prelude/interfaces/decimate';
 import { GeoPoint } from '../../prelude';
 import { Decimate_STTrace} from '../decimate-sttrace';
