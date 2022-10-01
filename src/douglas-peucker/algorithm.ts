@@ -1,5 +1,5 @@
-import { IPoint } from "prelude"
-import { DecimateBatch } from "prelude/interfaces/decimate"
+import { IPoint } from "../prelude"
+import { DecimateBatch } from "../prelude/interfaces/decimate"
 
 const calculatePED = (start: IPoint, median: IPoint, end:IPoint) => {
     const deltaLon = end.getLongitude() - start.getLongitude();
