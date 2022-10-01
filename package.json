@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SolveQ/path-decimation.git"
+    "url": "git+https://github.com/elasticlunr/path-decimation.git"
   },
   "files": [
     "dist/**/*",
