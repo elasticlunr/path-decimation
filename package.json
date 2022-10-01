@@ -68,9 +68,9 @@
   },
   "license": "GPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/SolveQ/path-decimation/issues"
+    "url": "https://github.com/elasticlunr/path-decimation/issues"
   },
-  "homepage": "https://github.com/SolveQ/path-decimation#readme",
+  "homepage": "https://github.com/elasticlunr/path-decimation#readme",
   "publishConfig": {
     "access": "public"
   },
